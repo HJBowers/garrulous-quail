@@ -1,7 +1,10 @@
 const express = require('express'),
       bodyParser = require('body-parser'),
-      app = express(),
-      jsonParser = bodyParser.json()
+      app = express()
+      jsonParser = bodyParser.json(),
+      urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+app.use(bodyParser.text({ type: 'text/plain' }))
 
 app.get('/', function(req, res) {
   res.status(200)
@@ -21,21 +24,20 @@ app.get('/search', function(req, res) {
   }
 })
 
-// Test in Postman
 app.post('/things', function(req, res) {
-  res.status(201)
-  res.setHeader('Content-Type', 'text/plain')
-  res.send('New thing created:' + req.body)
+  console.log(req.body);
+    res.status(201)
+    res.setHeader('Content-Type', 'text/plain')
+    res.send('New thing created: ' + req.body)
 })
 
 app.get('/somefile', function(req, res) {
-  if(req.get('Accept', 'text/plain')) {
-    res.setHeader('Content-Type', 'text/plain')
+  if(req.accepts('text/plain')) {
     res.status(200)
     res.send('This is a plain text file')
-  }else if(req.get('Accept', 'text/html')) {
-    res.setHeader('Content-Type', 'text/html')
+  }else if(req.accepts('text/html')) {
     res.status(200)
+    res.setHeader('Content-Type', 'text/html')
     res.send('<!DOCTYPE html><html><body>This is an HTML file</body></html>')
   }
 })
@@ -55,11 +57,10 @@ app.get('/old-page', function(req, res) {
   res.send()
 })
 
-// Test in Postman
-// app.post('/admin-only', function(req, res) {
-//   res.status(403)
-//   res.send()
-// })
+app.post('/admin-only', function(req, res) {
+  res.status(403)
+  res.send()
+})
 
 app.get('/not-a-page', function(req, res) {
   res.status(404)
