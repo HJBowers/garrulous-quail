@@ -1,0 +1,51 @@
+.container{
+  background-color: white;
+  }
+
+.inputParameters {
+  background-color: grey;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.inputs {
+  width: 224px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.keyBox {
+  height: 30px;
+  width: 60px;
+  margin: 1px;
+}
+
+.valueBox {
+  height: 30px;
+  width: 150px;
+  margin: 1px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 3px;
+}
+
+.titles {
+  color: white;
+}
+
+.bodyBox{
+  height: 90px;
+  width: 150px;
+  margin: 1px;
+}
