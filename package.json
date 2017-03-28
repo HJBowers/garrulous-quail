@@ -1,0 +1,27 @@
+{
+  "name": "garrulous-quail",
+  "version": "1.0.0",
+  "description": "Goal 194: Postalicious - Demystifying HTTP - Hannah Bowers @hjbowers - John Hallman @jhallman5 [Link to the Project Page](http://jsdev.learnersguild.org/goals/194-Postalicious-Demystifying_HTTP.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sb": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HJBowers/garrulous-quail.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HJBowers/garrulous-quail/issues"
+  },
+  "homepage": "https://github.com/HJBowers/garrulous-quail#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
