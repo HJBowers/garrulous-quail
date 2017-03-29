@@ -1,8 +1,8 @@
 <!DOCTYPE>
 <html>
   <head>
-    <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <div class='container'>
@@ -11,7 +11,7 @@
           Postalicious
         </div>
         <div>
-          <form class='inputParameters'>
+          <form class='inputParameters' onsubmit="buildRequest">
             <div class='form'>
               <div class='methodHost'>
                 <div class='method'>
@@ -19,7 +19,7 @@
                   <input class="methodBox" type="text" name="method" placeholder="value">
                 </div>
                 <div class='host'>
-                  <p class="titles">Host</p>
+                  <p class="titles">Request URL</p>
                   <input class="hostBox" type="text" name="host" placeholder="value">
                 </div>
               </div>
