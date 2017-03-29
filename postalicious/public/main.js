@@ -1,17 +1,16 @@
 function buildRequest() {
   var element = document.createElement('')
-  element.id = ''
-  var  = document.getElementsByClassName('queryParameters')
+  element.class = ''
 
-  const method =
-  const host =
+  const method = document.getElementsByClassName('methodBox')
+  const host = document.getElementsByClassName('hostBox')
 
-//query
-
-
-//header
-
-
-//body
+// //queryParameters
+//   const queryKeys = document.getElementsByClassName('qKeyBox')
+//   const queryValues = document.getElementsByClassName('qValueBox')
+//
+// //queryParameters
+//   const queryKeys = document.getElementsByClassName('qKeyBox')
+//   const queryValues = document.getElementsByClassName('qValueBox')
 
 }

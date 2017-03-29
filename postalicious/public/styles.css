@@ -1,9 +1,13 @@
+.htmlHeader {
+  background-color: #a0a0a0;
+}
+
 .container{
   background-color: white;
   }
 
 .inputParameters {
-  background-color: grey;
+  background-color: #d3d3d3;
 }
 
 .form {
@@ -40,12 +44,52 @@
   margin: 3px;
 }
 
-.titles {
-  color: white;
+.requestButton{
+  background-color: #66b266;
 }
 
-.bodyBox{
+.sendButton{
+  background-color: #70a8e6;
+}
+
+.titles {
+  color: black;
+}
+
+.bodyBox {
   height: 90px;
   width: 150px;
   margin: 1px;
+}
+
+.HTTPResult{
+  white-space: nowrap;
+}
+
+.HTTPRequest {
+  background-color: #add6ad;
+  height: 50%;
+  width: 50%;
+  display: inline-block;
+}
+
+.HTTPResponse {
+  height: 50%;
+  width: 50%;
+  display: inline-block;
+  background-color: #ADD8E6;
+}
+
+.HTTPRequestHeader {
+  background-color: #66b266;
+  height: 30px;
+  padding-left: 15PX;
+  padding-top: 8PX;
+}
+
+.HTTPResponseHeader {
+  background-color: #70a8e6;
+  height: 30px;
+  padding-left: 15PX;
+  padding-top: 8PX;
 }
