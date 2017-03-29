@@ -1,6 +1,8 @@
 <!DOCTYPE>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <div class='container'>
@@ -8,33 +10,67 @@
         <div class='htmlHeader'>
           Postalicious
         </div>
-        <div class='inputParameters'>
-          <div class='method-host'>
+        <div>
+          <form class='inputParameters' onsubmit='buildRequest()' >
+            <div class='form'>
+              <div class='methodHost'>
+                <div class='method'>
+                  <p class="titles">Method</p>
+                  <input class="methodBox" type="text" name="method" placeholder="value">
+                </div>
+                <div class='host'>
+                  <p class="titles">Request URL</p>
+                  <input class="hostBox" type="text" name="host" placeholder="value">
+                </div>
+              </div>
+              <div class='queryParameters'>
+                <p class="titles">Query Parameters</p>
+                <div class="query">
+                  <input class="qkeyBox" type="text" name="key1" placeholder="key">
+                  <input class="qvalueBox" type="text" name="value1" placeholder="value">
+                  <input class="qkeyBox" type="text" name="key2" placeholder="key">
+                  <input class="qvalueBox" type="text" name="value2" placeholder="value">
+                  <input class="qkeyBox" type="text" name="key3" placeholder="key">
+                  <input class="qvalueBox" type="text" name="value3" placeholder="value">
+                </div>
+              </div>
+              <div class='RequestHeaders'>
+                <p class="titles">Headers</p>
+                <div class="headers">
+                  <input class="hkeyBox" type="text" name="key4" placeholder="key">
+                  <input class="hvalueBox" type="text" name="value4" placeholder="value">
+                  <input class="hkeyBox" type="text" name="key5" placeholder="key">
+                  <input class="hvalueBox" type="text" name="value5" placeholder="value">
+                  <input class="hkeyBox" type="text" name="key6" placeholder="key">
+                  <input class="hvalueBox" type="text" name="value6" placeholder="value">
+                </div>
+              </div>
+              <div class='requestBody'>
+                <p class="titles">Body</p>
+                <textarea class="bodyBox" type="text" name="body" placeholder="Enter your text body here"></textarea>
+              </div>
           </div>
-          <div class='queryParameters'>
+          <div class='buttons'>
+            <input class='requestButton' type="submit" value="Build Request">
+            <input class='sendButton' type="submit" value="Build & Send">
           </div>
-          <div class='RequestHeaders'>
-          </div>
-          <div class='requestBody'>
-          </div>
-        </div>
-        <div class='button'>
-        </div>
-        <div class='button'>
+          </form>
         </div>
       </div>
-      <div class='HTTPRequest'>
-        <div class='HTTPRequestHeader'>
-          Request
+      <div class="HTTPResult">
+        <div class='HTTPRequest'>
+          <div class='HTTPRequestHeader'>
+            REQUEST
+          </div>
+          <div class='HTTPRequestBody'>
+          </div>
         </div>
-        <div class='HTTPRequestBody'>
-        </div>
-      </div>
-      <div class='HTTPResponse'>
-        <div class='HTTPResponseHeader'>
-          Response
-        </div>
-        <div class='HTTPResponseBody'>
+        <div class='HTTPResponse'>
+          <div class='HTTPResponseHeader'>
+            RESPONSE
+          </div>
+          <div class='HTTPResponseBody'>
+          </div>
         </div>
       </div>
     </div>
