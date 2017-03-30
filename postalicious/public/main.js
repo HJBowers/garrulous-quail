@@ -36,7 +36,7 @@ function buildRequest() {
     if(element.className === "hkeyBox" || element.className ==='hvalueBox'){
       httpObject.headers.push(element.value)
     }
-    if(element.tagName === "textarea"){
+    if(element.className === "bodyBox"){
       httpObject.body = element.value
     }
   })
