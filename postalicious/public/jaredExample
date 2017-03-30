@@ -1,0 +1,47 @@
+const valueFor = (name) => document.querySelector(`[name="${name}"]`).value
+
+requestDetails = {
+  method: valueFor("method"),
+  host: valueFor("host"),
+  body: valueFor("body"),
+  headers: [
+    [
+      valueFor("headerKey1"),
+      valueFor("headerValue1")
+    ],
+    [
+      valueFor("headerKey2"),
+      valueFor("headerValue2")
+    ],
+    [
+      valueFor('headerKey3'),
+      valueFor('headerValue3')
+    ]
+  queryParameters: [
+    [
+      valueFor("queryKey4"),
+      valueFor("queryValue4")
+    ],
+    [
+      valueFor("queryKey5"),
+      valueFor("queryValue5")
+    ],
+    [
+      valueFor("queryKey6"),
+      valueFor("queryValue6")
+    ]
+  ]
+}
+console.log(requestDetails)
+const requestDetailsToString = (requestDetails) => {
+  `
+  GET /foo/bar?a=1&b=2 HTTP/1.1
+  Host: example.com
+  User-Agent: curl/7.51.0
+  Accept: */*
+  `
+
+  let string =  ''
+  string += requestDetails.method.toUpperCase() + ' '
+
+}

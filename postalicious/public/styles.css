@@ -33,25 +33,13 @@
   justify-content: space-around;
 }
 
-.qkeyBox {
+.keyBox {
   height: 30px;
   width: 60px;
   margin: 1px;
 }
 
-.qvalueBox {
-  height: 30px;
-  width: 150px;
-  margin: 1px;
-}
-
-.hkeyBox {
-  height: 30px;
-  width: 60px;
-  margin: 1px;
-}
-
-.hvalueBox {
+.valueBox {
   height: 30px;
   width: 150px;
   margin: 1px;
