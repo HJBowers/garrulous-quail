@@ -70,23 +70,21 @@
 }
 
 .HTTPResult{
-  /*white-space: nowrap;*/
   display: flex;
   flex-direction: row;
-  min-height: 50vh;
+  min-height: 65vh;
 }
 
 .HTTPRequest {
   flex: 1 1 auto;
   background-color: #add6ad;
-  /*height: 50%;
-  width: 50%;*/
-  display: inline-block;
+  width: 50%;
 }
 
 .HTTPResponse {
   flex: 1 1 auto;
   background-color: #ADD8E6;
+  width: 50%;
 }
 
 .HTTPRequestHeader {
@@ -106,4 +104,5 @@
 .HTTPRequestBody {
   display: flex;
   flex-wrap: wrap;
+  overflow-y: auto;
 }

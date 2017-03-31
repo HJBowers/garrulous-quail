@@ -29,21 +29,6 @@ app.post('/dorequest', function(req, res) {
       res.json(response)
     }
   })
-
-
-  // let info = JSON.parse(request.body)
-  // megaHTTPRequestULTRATON(info, (error, urlResponse, body) => {
-  //   if(error) {
-  //     console.log("NOOOOOO");
-  //   } else {
-  //     res.json({
-  //       'headers': urlResponse.headers,
-  //       'body': body,
-  //       'status': urlResponse.status,
-  //       'httpVersion': urlResponse.httpVersion
-  //     })
-  //   }
-  // })
 })
 
 app.listen(3001, function() {
