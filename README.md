@@ -45,28 +45,28 @@ Goal 194: Postalicious - Demystifying HTTP
 **Postalicious**
 - [X] Can run the command `npm run postalicious` (or `npm run pl`, if you want to save some typing) to start the Postalicious app at port 3001.
 - [X] Users can visit the main page of the Postalicious site at `http://localhost:3001`.
-- [ ] Main page has three main sections:
-  - [ ] Request builder HTML form
-  - [ ] Raw HTTP request
-  - [ ] Raw HTTP response
-- [ ] When a user fills out the HTML form and clicks a "Send" button...
-  - [ ] The raw HTTP request is generated and shown
-  - [ ] The HTTP request is sent, and the raw response message is shown
-- [ ] Users can fill out an HTML form to specify HTTP request details.
-- [ ] Submitting the form will send the request according to the specified details.
-- [ ] Requests are made from the server, not from the browser (this is to avoid [CORS issues](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)).
-- [ ] Using the HTML form, users can specify...
-  - [ ] host and path
-  - [ ] HTTP verb/method
-  - [ ] query parameter keys + values
-  - [ ] header keys + values
-  - [ ] request body
+- [X] Main page has three main sections:
+  - [X] Request builder HTML form
+  - [X] Raw HTTP request
+  - [X] Raw HTTP response
+- [X] When a user fills out the HTML form and clicks a "Send" button...
+  - [X] The raw HTTP request is generated and shown
+  - [X] The HTTP request is sent, and the raw response message is shown
+- [X] Users can fill out an HTML form to specify HTTP request details.
+- [X] Submitting the form will send the request according to the specified details.
+- [X] Requests are made from the server, not from the browser (this is to avoid [CORS issues](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)).
+- [X] Using the HTML form, users can specify...
+  - [X] host and path
+  - [X] HTTP verb/method
+  - [X] query parameter keys + values
+  - [X] header keys + values
+  - [X] request body
 
 ### Stretch
 Use the stretch goals to go deeper into the nuts and bolts of HTTP.
 
 - [ ] Sandbox server is written using _only the core Node.js modules_ (instead of Express, use the built-in [HTTP module][node-http]).
-- [ ] Users of Postalicious can "save" their requests in a history panel
+- [X] Users of Postalicious can "save" their requests in a history panel
 - [ ] Clicking on a saved request will re-load it into the form
 - [ ] Using Postalicious, create some HTTP requests to various real-world APIs:
   - [ ] Get all issues for a repo through the GitHub API

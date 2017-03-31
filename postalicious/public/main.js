@@ -69,7 +69,6 @@ function doRequest(requestDetails){
     },
     body: JSON.stringify(requestDetails),
   })
-  // .then(response => response.body() )
   .then(transportResponse => {
     if (transportResponse.ok) return transportResponse.json()
     console.error('failed to do request', response)
@@ -89,15 +88,8 @@ function doRequest(requestDetails){
   })
 }
 
-// REQUEST SHOULD LOOK LIKE EXAMPLE BELOW:
-// `
-// GET /foo/bar?a=1&b=2 HTTP/1.1
-// Host: example.com
-// User-Agent: curl/7.51.0
-// Accept: */*
-// `
 const requestDetailsToString = (requestDetails) => {
-  let startOfPath = requestDetails.host.indexOf('3001/') + 4
+  let startOfPath = requestDetails.host.indexOf( '/', 9 )
   let path = requestDetails.host.slice(startOfPath)
   let string =  ''
   string += requestDetails.method.toUpperCase() + ' '
@@ -108,67 +100,5 @@ const requestDetailsToString = (requestDetails) => {
   string += 'Accept: */* '
   return string
 }
-
-function responseMessage() {
-  const requestDetails = getRequestDetails()
-  fetch('localhost:3001/responseMessage', {
-    method: 'POST',
-    headers: {
-      'Accept': 'text/plain'
-    },
-    body: JSON.stringify(requestDetails)
-  })
-  .then(response => response.json())
-  //RENDER RESPONSE HERE with helper function
-}
-
-// REPSONSE SHOULD LOOK LIKE EXAMPLE BELOW:
-/*
-HTTP/1.1 200 OK
-Date: Sun, 18 Oct 2009 08:56:53 GMT
-Server: Apache/2.2.14 (Win32)
-Last-Modified: Sat, 20 Nov 2004 07:16:26 GMT
-ETag: "10000000565a5-2c-3e94b66c2e680"
-Accept-Ranges: bytes
-Content-Length: 44
-Connection: close
-Content-Type: text/html
-X-Pad: avoid browser bug
-
-<html><body><h1>It works!</h1></body></html>
-*/
-function renderResponse(domValues) {
-  let responseDiv = document.querySelector('.HTTPResponseBody')
-  if('error' in domValues) {
-    console.log("renderResponse ERROR");
-  } else {
-    let
-  }
-}
-
-
-//step 1
-  // create a json object with form informatiion
-//step 2
-  //log the json object to the console
-//step 3
-  //display json object in the request box
-//step 4
-  //send json object to the sandbox server in the body of an http request
-//step5
-  //use a http library to make an http from the body of the http request
-//step 6
-  //get the response and send that back to the pl server
-// step 7
-  //display http body as an http request in the response box
-
-
-//header
-
-
-//body
-//
-// }
-
 
 document.querySelector('.requestButton').addEventListener('click', formSubmission)
