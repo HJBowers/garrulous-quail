@@ -1,6 +1,6 @@
 const express = require('express'),
       bodyParser = require('body-parser'),
-      app = express()
+      app = express(),
       jsonParser = bodyParser.json(),
       urlencodedParser = bodyParser.urlencoded({ extended: false })
 

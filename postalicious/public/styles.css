@@ -1,0 +1,109 @@
+.htmlHeader {
+  background-color: #a0a0a0;
+}
+
+.container{
+  background-color: white;
+  }
+
+.inputParameters {
+  background-color: #d3d3d3;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.query {
+  width: 224px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headers {
+  width: 224px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.keyBox {
+  height: 30px;
+  width: 60px;
+  margin: 1px;
+}
+
+.valueBox {
+  height: 30px;
+  width: 150px;
+  margin: 1px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 3px;
+}
+
+.requestButton{
+  background-color: #66b266;
+}
+
+.sendButton{
+  background-color: #70a8e6;
+}
+
+.titles {
+  color: black;
+}
+
+.bodyBox {
+  height: 90px;
+  width: 150px;
+  margin: 1px;
+}
+
+.HTTPResult{
+  /*white-space: nowrap;*/
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+}
+
+.HTTPRequest {
+  flex: 1 1 auto;
+  background-color: #add6ad;
+  /*height: 50%;
+  width: 50%;*/
+  display: inline-block;
+}
+
+.HTTPResponse {
+  flex: 1 1 auto;
+  background-color: #ADD8E6;
+}
+
+.HTTPRequestHeader {
+  background-color: #66b266;
+  height: 30px;
+  padding-left: 15PX;
+  padding-top: 8PX;
+}
+
+.HTTPResponseHeader {
+  background-color: #70a8e6;
+  height: 30px;
+  padding-left: 15PX;
+  padding-top: 8PX;
+}
+
+.HTTPRequestBody {
+  display: flex;
+  flex-wrap: wrap;
+}
