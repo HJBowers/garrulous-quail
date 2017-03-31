@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <div class='container'>
@@ -11,16 +10,16 @@
           Postalicious
         </div>
         <div>
-          <form class='inputParameters' onsubmit='buildRequest()' >
+          <form class='inputParameters'  >
             <div class='form'>
               <div class='methodHost'>
                 <div class='method'>
                   <p class="titles">Method</p>
-                  <input class="methodBox" type="text" name="method" placeholder="value">
+                  <input class="methodBox" type="text" name="method" placeholder="value" value="get">
                 </div>
                 <div class='host'>
                   <p class="titles">Request URL</p>
-                  <input class="hostBox" type="text" name="host" placeholder="value">
+                  <input class="hostBox" type="text" name="host" placeholder="value" value="http://localhost:3000/somefile">
                 </div>
               </div>
               <div class='queryParameters'>
@@ -38,9 +37,9 @@
                 <p class="titles">Headers</p>
                 <div class="headers">
                   <input class="keyBox" type="text" name="headerKey1" placeholder="key">
-                  <input class="valueBox" type="text" name="headerValue2" placeholder="value">
+                  <input class="valueBox" type="text" name="headerValue1" placeholder="value">
                   <input class="keyBox" type="text" name="headerKey2" placeholder="key">
-                  <input class="valueBox" type="text" name="headerValue3" placeholder="value">
+                  <input class="valueBox" type="text" name="headerValue2" placeholder="value">
                   <input class="keyBox" type="text" name="headerKey3" placeholder="key">
                   <input class="valueBox" type="text" name="headerValue3" placeholder="value">
                 </div>
@@ -51,7 +50,7 @@
               </div>
           </div>
           <div class='buttons'>
-            <input class='requestButton' type="submit" value="Build Request">
+            <input class='requestButton' type="button" value="Build Request">
             <input class='sendButton' type="submit" value="Build & Send">
           </div>
           </form>
@@ -74,5 +73,6 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

@@ -70,20 +70,22 @@
 }
 
 .HTTPResult{
-  white-space: nowrap;
+  /*white-space: nowrap;*/
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
 }
 
 .HTTPRequest {
+  flex: 1 1 auto;
   background-color: #add6ad;
-  height: 50%;
-  width: 50%;
+  /*height: 50%;
+  width: 50%;*/
   display: inline-block;
 }
 
 .HTTPResponse {
-  height: 50%;
-  width: 50%;
-  display: inline-block;
+  flex: 1 1 auto;
   background-color: #ADD8E6;
 }
 
@@ -99,4 +101,9 @@
   height: 30px;
   padding-left: 15PX;
   padding-top: 8PX;
+}
+
+.HTTPRequestBody {
+  display: flex;
+  flex-wrap: wrap;
 }
